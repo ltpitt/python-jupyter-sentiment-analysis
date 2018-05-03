@@ -6,7 +6,7 @@ Based on Sentiment Analysis tutorial by Andrew Trask
 - **Twitter**: @iamtrask
 - **Blog**: http://iamtrask.github.io
 
-# Preparing the Dataset<a id='lesson_1'></a>
+# Preparing the Dataset
 
 
 ```python
@@ -399,7 +399,7 @@ mlp_full.train(reviews[:-1000],labels[:-1000])
     Progress:93.7% Speed(reviews/sec):769.9 #Correct:19015 #Trained:22501 Training Accuracy:84.5%
     Progress:99.9% Speed(reviews/sec):769.0 #Correct:20335 #Trained:24000 Training Accuracy:84.7%
 
-#Now our Neural Network is ready to tell if a new review is "POSITIVE" or "NEGATIVE", let's try a negative
+# Now our Neural Network is ready to tell if a new review is "POSITIVE" or "NEGATIVE", let's try a negative
 
 
 ```python
@@ -413,7 +413,7 @@ mlp_full.run("This movie was very bad and I did not like it")
 
 
 
-#Well done, buddy! Time for a positive one
+# Well done, buddy! Time for a positive one
 
 
 ```python

@@ -112,7 +112,6 @@ class SentimentNetwork:
 
         # process the reviews and their associated labels so that everything
         # is ready for training
-        ## New for Project 6: added min_count and polarity_cutoff arguments to pre_process_data call
         self.pre_process_data(reviews, labels, polarity_cutoff, min_count)
         
         # Build the network to have the number of hidden nodes and the learning rate that
@@ -205,8 +204,6 @@ class SentimentNetwork:
         
         # The input layer, a two-dimensional matrix with shape 1 x hidden_nodes
         self.layer_1 = np.zeros((1,hidden_nodes))
-    
-    ## New for Project 5: Removed update_input_layer function
     
     def get_target_for_label(self,label):
         if(label == 'POSITIVE'):
@@ -339,7 +336,6 @@ class SentimentNetwork:
             self.layer_1 += self.weights_0_1[index]
         
         # Output layer
-        ## New for Project 5: changed to use self.layer_1 instead of local layer_1
         layer_2 = self.sigmoid(self.layer_1.dot(self.weights_1_2))
          
         # Return POSITIVE for values above greater-than-or-equal-to 0.5 in the output layer;
